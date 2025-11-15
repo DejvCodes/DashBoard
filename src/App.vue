@@ -5,11 +5,14 @@
         <div class="h-16 flex items-center justify-between">
           <!----- LOGO ----->
           <div class="shrink-0">
-            <RouterLink to="/" class="flex items-center gap-2 group">
-              <div class="w-8 h-8 flex items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-700 to-pink-600 rounded-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg shadow-indigo-500/20">
+            <RouterLink 
+              to="/" 
+              class="flex items-center gap-2 group"
+            >
+              <div class="w-8 h-8 flex items-center justify-center bg-linear-to-r from-primary via-accent to-success rounded-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg shadow-primary/20">
                 <span class="text-xl font-bold text-white">D</span>
               </div>
-              <span class="text-xl font-bold bg-linear-to-r from-indigo-500 via-purple-700 to-pink-500 bg-clip-text text-transparent">
+              <span class="text-xl font-bold bg-linear-to-r from-primary via-accent to-success bg-clip-text text-transparent">
                 Dashboard
               </span>
             </RouterLink>
@@ -17,22 +20,17 @@
           <!----- DESKTOP NAVIGATION ----->
           <div class="hidden md:flex items-center gap-4">
             <RouterLink 
-              to="/" 
-              class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-linear-to-r hover:from-indigo-500/10 hover:to-purple-500/10 transition-all duration-300 font-medium"
-              active-class="!text-white !bg-linear-to-r !from-indigo-500/20 !to-purple-500/20"
+              v-for="link in routerLinks"
+              :key="link.name"
+              :to="link.to" 
+              class="rounded-lg text-gray-300 font-medium hover:text-white hover:bg-linear-to-r hover:from-primary/10 hover:to-accent/10 transition-all duration-300 px-4 py-2"
+              active-class="!text-white !bg-linear-to-r !from-primary/20 !to-accent/20"
             >
-              Home
-            </RouterLink>
-            <RouterLink 
-              to="/dashboard"
-              class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-linear-to-r hover:from-indigo-500/10 hover:to-purple-500/10 transition-all duration-300 font-medium"
-              active-class="!text-white !bg-linear-to-r !from-indigo-500/20 !to-purple-500/20"
-            >
-              DashBoard
+              {{ link.name }}
             </RouterLink>
           </div>
           <!----- BTN GET STARTED ----->
-          <button class="hidden md:flex text-white font-semibold bg-linear-to-r from-indigo-500 via-purple-700 to-pink-500 rounded-lg px-3 py-2 hover:shadow-lg hover:shadow-indigo-500/20 transition-all duration-300 cursor-pointer">
+          <button class="hidden md:flex text-white font-semibold bg-linear-to-r from-primary via-accent to-success rounded-lg px-3 py-2 hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 cursor-pointer">
             Get Started
           </button>
           <!----- BTN MOBILE ----->
@@ -65,33 +63,27 @@
         >
           <div class="flex flex-col gap-2">
             <RouterLink 
-              to="/" 
+              v-for="link in routerLinks"
+              :key="link.name"
+              :to="link.to" 
+              class="block px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-linear-to-r hover:from-primary/10 hover:to-accent/10 transition-all duration-300 font-medium"
+              active-class="!text-white !bg-linear-to-r !from-primary/20 !to-accent/20"
               @click="mobileMenuOpen = false"
-              class="px-4 py-3 rounded-lg text-gray-300 bg-white/3 hover:text-white hover:bg-white/10 transition-all duration-300 font-medium"
-              active-class="!text-white !bg-indigo-700"
             >
-              Home
+              {{ link.name }}
             </RouterLink>
-            <RouterLink 
-              to="/dashboard" 
-              @click="mobileMenuOpen = false"
-              class="px-4 py-3 rounded-lg text-gray-300 bg-white/3 hover:text-white hover:bg-white/10 transition-all duration-300 font-medium"
-              active-class="!text-white !bg-indigo-700"
-            >
-              Dashboard
-            </RouterLink>
-            <button class="mt-2 px-4 py-3 bg-linear-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-indigo-500/50 transition-all duration-300">
+            <button class="mt-2 px-4 py-3 bg-linear-to-r from-primary to-accent text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300">
               Get Started
             </button>
           </div>
         </div>
       </nav>
     </header>
-
+    <!----- MAIN ----->
     <main>
       <RouterView />
     </main>
-
+    <!----- FOOTER ----->
     <footer class="border-t border-white/10 text-center text-gray-500 py-3">
       &copy; {{ currentYear }} Dashboard. All rights reserved.
     </footer>
@@ -100,6 +92,13 @@
 
 <script lang="ts" setup>
   import {ref} from 'vue';
+
+  const routerLinks = [
+    { to: '/', name: 'Home' },
+    { to: '/about', name: 'About' },
+    { to: '/dashboard', name: 'Dashboard' },
+  ];
+
   const mobileMenuOpen = ref(false);
   const currentYear = new Date().getFullYear();
 </script>
@@ -112,14 +111,8 @@
     background: #03071a;
   }
   @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    from {opacity: 0;transform: translateY(-10px);}
+    to {opacity: 1; transform: translateY(0);}
   }
   .animate-slideDown {
     animation: slideDown 0.3s ease-out;
