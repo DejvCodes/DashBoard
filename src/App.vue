@@ -59,20 +59,20 @@
         <!----- MOBILE MENU ----->
         <div
           v-if="mobileMenuOpen"
-          class="md:hidden pt-4 pb-4 border-t border-white/10 animate-slideDown"
+          class="md:hidden border-t border-white/10 animate-slideDown pt-4 pb-4"
         >
           <div class="flex flex-col gap-2">
             <RouterLink 
               v-for="link in routerLinks"
               :key="link.name"
               :to="link.to" 
-              class="block px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-linear-to-r hover:from-primary/10 hover:to-accent/10 transition-all duration-300 font-medium"
+              class="block rounded-lg text-gray-300 hover:text-white hover:bg-linear-to-r hover:from-primary/10 hover:to-accent/10 transition-all duration-300 font-medium px-4 py-2"
               active-class="!text-white !bg-linear-to-r !from-primary/20 !to-accent/20"
               @click="mobileMenuOpen = false"
             >
               {{ link.name }}
             </RouterLink>
-            <button class="mt-2 px-4 py-3 bg-linear-to-r from-primary to-accent text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300">
+            <button class="bg-linear-to-r from-primary to-accent text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 mt-2 px-4 py-3">
               Get Started
             </button>
           </div>
