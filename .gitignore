@@ -33,4 +33,4 @@ coverage
 /cypress/screenshots/
 
 # Vitest
-__screenshots__/
+__screenshots__/ 
