@@ -8,6 +8,21 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomePage,
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: () => import('@/pages/AboutUsPage.vue'),
+    },
+    {
+      path: '/dashboard',
+      name: 'dashboard',
+      component: () => import('@/pages/DashBoardPage.vue'),
+    },
+    // Redirect any unmatched routes to home
+    {
+      path: '/:pathMatch(.*)*',
+      redirect: '/',
     }
   ],
 })

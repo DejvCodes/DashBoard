@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen relative bg-linear-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
+  <div class="relative min-h-lvh bg-linear-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
     <!----- AMBIENT BG EFFECTS ----->
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.1),transparent_50%)]"></div>
     <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
@@ -21,9 +21,9 @@
       <div class="w-18 h-18 bg-linear-to-br from-primary/30 to-accent/30 rounded-2xl backdrop-blur-xl border border-white/10 rotate-60"></div>
     </div>
     <!----- HERO SECTION ----->
-    <section class="relative max-w-[1400px] px-[5%] py-20 mx-auto mt-6 md:mt-16">
+    <section class="relative max-w-[1400px] px-[5%] py-16 md:py-20 mx-auto mt-6 md:mt-20 2xl:mt-42">
       <div class="max-w-[900px] text-center mx-auto">
-        <div class="inline-block bg-white/5 rounded-full border border-white/10 backdrop-blur-2xl mb-8 px-4 py-2">
+        <div class="inline-block bg-white/5 rounded-full border border-white/10 backdrop-blur-2xl mb-4 md:mb-8 px-4 py-2">
           <span class="text-sm text-gray-300">Next-generation analytics platform</span>
         </div>
         <!----- MAIN TITLE ----->
@@ -42,23 +42,23 @@
         <div class="flex gap-4 flex-wrap justify-center items-center">
           <RouterLink 
             to="/dashboard" 
-            class="group px-8 py-4 bg-linear-to-br from-primary to-secondary text-white rounded-full font-semibold text-lg shadow-[0_0_40px_rgba(99,102,241,0.3)] hover:shadow-[0_0_60px_rgba(99,102,241,0.5)] hover:scale-105 transition-all duration-300 flex items-center gap-2"
+            class="w-48 group bg-linear-to-br from-primary to-secondary text-white rounded-full font-semibold text-lg shadow-[0_0_40px_rgba(99,102,241,0.3)] hover:shadow-[0_0_60px_rgba(99,102,241,0.5)] hover:scale-105 transition-all duration-300 flex items-center gap-2 px-8 py-3"
           >
             Get Started
             <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
             </svg>
           </RouterLink>
-          <button class="px-8 py-4 bg-white/5 text-white rounded-full font-semibold text-lg backdrop-blur-xl border border-white/10 hover:bg-white/10 hover:scale-105 transition-all duration-300">
+          <button class="w-48 bg-white/5 text-white rounded-full font-semibold text-lg backdrop-blur-xl border border-white/10 hover:bg-white/10 hover:scale-105 transition-all duration-300 px-8 py-3">
             Watch Demo
           </button>
         </div>
       </div>
     </section>
     <!----- FEATURES SECTION ----->
-    <section id="features" class="relative z-10 py-32 px-[5%] overflow-hidden">
+    <section id="features" class="relative py-12 md:py-32 px-[5%] overflow-hidden z-10">
       <div class="text-center mb-12">
-        <h2 class="text-5xl md:text-6xl font-bold mb-4">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">
           <span class="bg-linear-to-br from-white to-gray-400 bg-clip-text text-transparent">
             Premium Features
           </span>
@@ -71,14 +71,15 @@
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div
           v-for="oneFeature in premiumFeatures"
-          class="group bg-linear-to-br from-white/10 to-white/2 p-8 rounded-3xl border border-white/10 backdrop-blur-xl hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(99,102,241,0.2)]"
+          :key="oneFeature.title"
+          class="group bg-linear-to-br from-white/10 to-white/2 rounded-3xl border border-white/10 backdrop-blur-xl hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(99,102,241,0.2)] p-4 md:p-8"
         >
-          <div :class="`w-14 h-14 bg-linear-to-br ${oneFeature.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`">
+          <div :class="`w-12 h-12 md:w-14 md:h-14 bg-linear-to-br ${oneFeature.color} rounded-xl md:rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mb-4 md:mb-6`">
             <span class="text-2xl">
               {{ oneFeature.icon }}
             </span>
           </div>
-          <h3 class="text-2xl font-bold text-white mb-3">
+          <h3 class="text-2xl font-bold text-white mb-1 md:mb-3">
             {{ oneFeature.title }}
           </h3>
           <p class="text-gray-400 leading-relaxed">
@@ -88,22 +89,22 @@
       </div>
     </section>
     <!----- START SECTION ----->
-    <section class="relative py-32 px-[5%] z-10">
+    <section class="relative py-12 md:py-32 px-[5%] z-10">
       <div class="max-w-[1200px] text-center mx-auto">
-        <div class="relative bg-linear-to-br from-white/10 to-white/5 p-16 rounded-[3rem] border border-white/20 backdrop-blur-xl overflow-hidden">
+        <div class="relative bg-linear-to-br from-white/10 to-white/5 rounded-3xl md:rounded-[3rem] border border-white/20 backdrop-blur-xl overflow-hidden p-6 md:p-16">
           <div class="absolute inset-0 bg-linear-to-br from-primary/20 via-transparent to-secondary/20"></div>
           <div class="relative">
-            <h2 class="text-5xl md:text-6xl font-bold mb-6">
+            <h2 class="text-3xl md:text-6xl font-bold mb-4 md:mb-6">
               <span class="bg-linear-to-br from-white to-gray-300 bg-clip-text text-transparent">
                 Ready to transform your workflow?
               </span>
             </h2>
-            <p class="text-xl text-gray-400 mb-10 max-w-[600px] mx-auto">
+            <p class="text-xl text-gray-400 max-w-[600px] mx-auto mb-8 md:mb-10">
               Join thousands of teams already using our platform to drive better decisions
             </p>
             <RouterLink 
               to="/dashboard" 
-              class="inline-flex items-center gap-2 px-10 py-5 text-xl bg-linear-to-br from-primary to-secondary text-white rounded-full font-semibold shadow-[0_0_50px_rgba(99,102,241,0.4)] hover:shadow-[0_0_70px_rgba(99,102,241,0.6)] hover:scale-105 transition-all duration-300"
+              class="inline-flex items-center text-xl bg-linear-to-br from-primary to-secondary text-white rounded-full font-semibold shadow-[0_0_50px_rgba(99,102,241,0.4)] hover:shadow-[0_0_70px_rgba(99,102,241,0.6)] hover:scale-105 transition-all duration-300 gap-2 px-8 md:px-10 py-3 md:py-5"
             >
               Start Free Trial
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
