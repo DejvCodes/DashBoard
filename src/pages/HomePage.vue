@@ -27,7 +27,7 @@
           <span class="text-sm text-gray-300">Next-generation analytics platform</span>
         </div>
         <!----- MAIN TITLE ----->
-        <h1 class="text-[55px] md:text-7xl lg:text-8xl font-bold mb-6 leading-[1.1]">
+        <h1 class="text-[55px] md:text-7xl lg:text-8xl font-bold leading-[1.1] mb-6">
           <span class="bg-linear-to-br from-white via-gray-100 to-gray-400 bg-clip-text text-transparent">
             Elevate Your
           </span>
@@ -39,10 +39,10 @@
         <p class="text-xl md:text-2xl text-gray-400 leading-relaxed max-w-[700px] mx-auto mb-6">
           Transform raw data into actionable insights with our premium analytics dashboard designed for modern teams
         </p>
-        <div class="flex gap-4 flex-wrap justify-center items-center">
+        <div class="flex flex-wrap justify-center items-center gap-4">
           <RouterLink 
             to="/dashboard" 
-            class="w-48 group bg-linear-to-br from-primary to-secondary text-white rounded-full font-semibold text-lg shadow-[0_0_40px_rgba(99,102,241,0.3)] hover:shadow-[0_0_60px_rgba(99,102,241,0.5)] hover:scale-105 transition-all duration-300 flex items-center gap-2 px-8 py-3"
+            class="w-48 group flex items-center bg-linear-to-br from-primary to-secondary text-white rounded-full font-semibold text-lg shadow-[0_0_40px_rgba(99,102,241,0.3)] hover:shadow-[0_0_60px_rgba(99,102,241,0.5)] hover:scale-105 transition-all duration-300 gap-2 px-8 py-3"
           >
             Get Started
             <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -74,7 +74,7 @@
           :key="oneFeature.title"
           class="group bg-linear-to-br from-white/10 to-white/2 rounded-3xl border border-white/10 backdrop-blur-xl hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(99,102,241,0.2)] p-4 md:p-8"
         >
-          <div :class="`w-12 h-12 md:w-14 md:h-14 bg-linear-to-br ${oneFeature.color} rounded-xl md:rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mb-4 md:mb-6`">
+          <div :class="`w-12 h-12 md:w-14 md:h-14 flex items-center justify-center  bg-linear-to-br ${oneFeature.color} rounded-xl md:rounded-2xl group-hover:scale-110 transition-transform duration-300 mb-4 md:mb-6`">
             <span class="text-2xl">
               {{ oneFeature.icon }}
             </span>
