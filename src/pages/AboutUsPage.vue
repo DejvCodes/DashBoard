@@ -1,10 +1,10 @@
 <template>
-  <div class="relative min-h-screen bg-linear-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
+  <div class="relative min-h-screen flex justify-center items-center bg-linear-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
     <!-- AMBIENT BG EFFECTS -->
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.1),transparent_50%)]"></div>
     <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
     <!-- ABOUT US SECTION -->
-    <section class="relative max-w-[1400px] px-[5%] py-16 md:py-20 mx-auto mt-6 md:mt-20">
+    <section class="relative max-w-[1300px] px-[5%] lg:px-0 mt-22 lg:mt-10 mb-10">
       <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
         <!-- LEFT SIDE: TEXT CONTENT -->
         <div class="space-y-3">
