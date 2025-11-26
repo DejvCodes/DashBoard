@@ -1,4 +1,4 @@
-## 📊 Dashboard App
+## 📊 DashBoard App
 A modern and responsive Dashboard App built with Vue.js, TypeScript, Vite and Tailwind CSS. <br>
 This app provides an intuitive interface for data visualization and management with interactive charts and real-time data updates. <br>
 Built with modern web technologies for optimal performance.
