@@ -14,7 +14,7 @@ Built with modern web technologies for optimal performance.
 
 ## 🏃‍♂️ How to Run this App 
 1. Clone the repository: <br>
-    • git clone https://github.com/YOUR_USERNAME/dashboard.git <br>
+    • git clone https://github.com/DejvCodes/DashBoard.git <br>
     • cd dashboard <br>
 2. Install dependencies: <br>
     • npm install <br>
