@@ -1,6 +1,6 @@
 <template>
   <header class="fixed w-full backdrop-blur-xl bg-slate-900/70 border-b border-slate-800/40 shadow-lg shadow-black/20 z-1000">
-    <nav class="max-w-[1300px] px-[5%] lg:px-0 md:mx-0 lg:mx-auto">
+    <nav class="max-w-[1300px] px-[5%] xl:px-0 md:mx-0 lg:mx-auto">
       <div class="h-16 flex items-center justify-between">
         <!----- LOGO ----->
         <div class="shrink-0">
