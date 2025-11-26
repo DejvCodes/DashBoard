@@ -223,7 +223,6 @@
                   >
                     OK
                   </div>
-
                   <div
                     v-else
                     class="w-20 flex justify-center items-center text-sm font-medium text-white bg-primary rounded-lg py-1 px-2"
