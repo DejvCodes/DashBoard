@@ -14,7 +14,7 @@ Built with modern web technologies for optimal performance.
 
 ## 📱 Screenshots  
 <img src="public/dashboard-1.jpg" width="350"> <img src="/images/Todo List App 2.jpg" width="350">
-    
+
 ## 🏃‍♂️ How to Run this App 
 1. Clone the repository: <br>
     • git clone https://github.com/DejvCodes/DashBoard.git <br>
