@@ -24,7 +24,7 @@
     <section class="relative max-w-[1310px] px-[5%] py-16 md:py-20 mx-auto mt-6 md:mt-20 2xl:mt-42">
       <div class="max-w-[900px] text-center mx-auto">
         <div class="inline-block bg-white/5 rounded-full border border-white/10 backdrop-blur-2xl mb-4 md:mb-8 px-4 py-2">
-          <span class="text-sm text-gray-300">Next-generation analytics platform</span>
+          <span class="text-sm text-gray-300">E-commerce Intelligence Platform</span>
         </div>
         <!----- MAIN TITLE ----->
         <h1 class="text-[55px] md:text-7xl lg:text-8xl font-bold leading-[1.1] mb-6">
@@ -37,7 +37,7 @@
           </span>
         </h1>
         <p class="text-xl md:text-2xl text-gray-400 leading-relaxed max-w-[700px] mx-auto mb-6">
-          Transform raw data into actionable insights with our premium analytics dashboard designed for modern teams
+          Automate pricing, optimize bids, monitor competition, and scale your marketplace presence with our all-in-one platform
         </p>
         <div class="flex flex-wrap justify-center items-center gap-4">
           <RouterLink 
@@ -65,7 +65,7 @@
             </span>
           </h2>
           <p class="text-xl text-gray-400 max-w-[600px] mx-auto">
-            Everything you need to make data-driven decisions with confidence
+            Everything you need to dominate your market and maximize profits
           </p>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -97,11 +97,11 @@
           <div class="relative">
             <h2 class="text-3xl md:text-6xl font-bold mb-4 md:mb-6">
               <span class="bg-linear-to-br from-white to-gray-300 bg-clip-text text-transparent">
-                Ready to transform your workflow?
+                Ready to boost your sales?
               </span>
             </h2>
             <p class="text-xl text-gray-400 max-w-[600px] mx-auto mb-8 md:mb-10">
-              Join thousands of teams already using our platform to drive better decisions
+              Join thousands of sellers already using our platform to increase revenue and automate operations
             </p>
             <RouterLink 
               to="/dashboard" 
@@ -130,39 +130,39 @@
   const premiumFeatures: PremiumFeatures[] = [
     {
       color: "from-primary to-secondary",
-      icon: "⚡",
-      title: "Real-time Analytics",
-      description: "Monitor your metrics instantly with live data synchronization and updates."
+      icon: "💰",
+      title: "Dynamic Pricing",
+      description: "Automatically adjust prices based on competition, demand, and market trends to maximize profit margins."
     },
     {
       color: "from-accent to-secondary",
-      icon: "🔒",
-      title: "Bank-level Security",
-      description: "Enterprise-grade encryption and security protocols to protect your data."
+      icon: "🎯",
+      title: "Automated Bidding",
+      description: "AI-powered bid optimization for PPC campaigns with real-time adjustments and ROI tracking."
     },
     {
       color: "from-secondary to-primary",
-      icon: "🎨",
-      title: "Customizable Views",
-      description: "Personalize your dashboard with drag-and-drop widgets and layouts."
+      icon: "📊",
+      title: "Competition Monitoring",
+      description: "Track competitor prices 24/7 and receive instant alerts when market conditions change."
     },
     {
       color: "from-primary to-accent",
-      icon: "📱",
-      title: "Multi-platform",
-      description: "Seamless experience across desktop, tablet, and mobile devices."
+      icon: "🛒",
+      title: "Multi-Marketplace",
+      description: "Manage products across Amazon, eBay, Allegro and more from a single dashboard."
     },
     {
       color: "from-success to-secondary",
-      icon: "🤖",
-      title: "AI-Powered Insights",
-      description: "Get intelligent recommendations and predictions from machine learning."
+      icon: "📈",
+      title: "Advanced Analytics",
+      description: "Get deep insights into sales trends, profit margins, and product performance metrics."
     },
     {
       color: "from-secondary to-accent",
-      icon: "🔗",
-      title: "Smart Integrations",
-      description: "Connect with your favorite tools and services effortlessly."
+      icon: "🔄",
+      title: "Smart Sync",
+      description: "Real-time inventory and order synchronization across all your sales channels."
     }
   ]
 </script>
