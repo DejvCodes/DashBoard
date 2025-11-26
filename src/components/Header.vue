@@ -4,7 +4,10 @@
       <div class="h-16 flex items-center justify-between">
         <!----- LOGO ----->
         <div class="shrink-0">
-          <RouterLink to="/" class="flex items-center gap-2 group">
+          <RouterLink 
+            to="/" 
+            class="flex items-center gap-2 group"
+          >
             <div class="w-8 h-8 flex items-center justify-center bg-linear-to-r from-primary via-accent to-success rounded-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg shadow-primary/20">
               <span class="text-xl text-white font-bold">D</span>
             </div>
