@@ -12,7 +12,7 @@ Built with modern web technologies for optimal performance.
 • Component-Based – Modular Vue components for easy maintenance. <br>
 • Modern UI – Clean and intuitive user interface. <br>
 
-## 📱 Screenshots 
+## 📱 Screenshots  
 <img src="public/dashboard-1.jpg" width="350"> <img src="public/dashboard-2.jpg" width="350">
 
 ## 🏃🏻 How to Run this App 
