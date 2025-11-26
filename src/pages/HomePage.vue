@@ -21,7 +21,7 @@
       <div class="w-18 h-18 bg-linear-to-br from-primary/30 to-accent/30 rounded-2xl backdrop-blur-xl border border-white/10 rotate-60"></div>
     </div>
     <!----- HERO SECTION ----->
-    <section class="relative max-w-[1400px] px-[5%] py-16 md:py-20 mx-auto mt-6 md:mt-20 2xl:mt-42">
+    <section class="relative max-w-[1310px] px-[5%] py-16 md:py-20 mx-auto mt-6 md:mt-20 2xl:mt-42">
       <div class="max-w-[900px] text-center mx-auto">
         <div class="inline-block bg-white/5 rounded-full border border-white/10 backdrop-blur-2xl mb-4 md:mb-8 px-4 py-2">
           <span class="text-sm text-gray-300">Next-generation analytics platform</span>
@@ -57,40 +57,41 @@
     </section>
     <!----- FEATURES SECTION ----->
     <section id="features" class="relative py-12 md:py-32 px-[5%] overflow-hidden z-10">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl md:text-6xl font-bold mb-4">
-          <span class="bg-linear-to-br from-white to-gray-400 bg-clip-text text-transparent">
-            Premium Features
-          </span>
-        </h2>
-        <p class="text-xl text-gray-400 max-w-[600px] mx-auto">
-          Everything you need to make data-driven decisions with confidence
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div
-          v-for="oneFeature in premiumFeatures"
-          :key="oneFeature.title"
-          class="group bg-linear-to-br from-white/10 to-white/2 rounded-3xl border border-white/10 backdrop-blur-xl hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(99,102,241,0.2)] p-4 md:p-8"
-        >
-          <div :class="`w-12 h-12 md:w-14 md:h-14 flex items-center justify-center  bg-linear-to-br ${oneFeature.color} rounded-xl md:rounded-2xl group-hover:scale-110 transition-transform duration-300 mb-4 md:mb-6`">
-            <span class="text-2xl">
-              {{ oneFeature.icon }}
+      <div class="max-w-[1300px] mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-6xl font-bold mb-4">
+            <span class="bg-linear-to-br from-white to-gray-400 bg-clip-text text-transparent">
+              Premium Features
             </span>
-          </div>
-          <h3 class="text-2xl font-bold text-white mb-1 md:mb-3">
-            {{ oneFeature.title }}
-          </h3>
-          <p class="text-gray-400 leading-relaxed">
-            {{ oneFeature.description }}
+          </h2>
+          <p class="text-xl text-gray-400 max-w-[600px] mx-auto">
+            Everything you need to make data-driven decisions with confidence
           </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div
+            v-for="oneFeature in premiumFeatures"
+            :key="oneFeature.title"
+            class="group bg-linear-to-br from-white/10 to-white/2 rounded-3xl border border-white/10 backdrop-blur-xl hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(99,102,241,0.2)] p-4 md:p-8"
+          >
+            <div :class="`w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-linear-to-br ${oneFeature.color} rounded-xl md:rounded-2xl group-hover:scale-110 transition-transform duration-300 mb-4 md:mb-6`">
+              <span class="text-2xl">
+                {{ oneFeature.icon }}
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-1 md:mb-3">
+              {{ oneFeature.title }}
+            </h3>
+            <p class="text-gray-400 leading-relaxed">
+              {{ oneFeature.description }}
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <!----- START SECTION ----->
     <section class="relative py-12 md:py-32 px-[5%] z-10">
-      <div class="max-w-[1200px] text-center mx-auto">
+      <div class="max-w-[1300px] text-center mx-auto">
         <div class="relative bg-linear-to-br from-white/10 to-white/5 rounded-3xl md:rounded-[3rem] border border-white/20 backdrop-blur-xl overflow-hidden p-6 md:p-16">
           <div class="absolute inset-0 bg-linear-to-br from-primary/20 via-transparent to-secondary/20"></div>
           <div class="relative">
