@@ -24,5 +24,8 @@ Built with modern web technologies for optimal performance.
 ## 💻 Tech Stack 
 [![My Skills](https://skillicons.dev/icons?i=vue,typescript,vite,tailwindcss)](https://skillicons.dev)
 
+## 🌐 Live Demo
+<a href="https://dashboard-dejvcodes.netlify.app/">Dashboard App</a>
+
 ## 🔐 License
 [MIT License](LICENSE)
