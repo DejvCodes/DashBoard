@@ -24,7 +24,7 @@ Built with modern web technologies for optimal performance.
 3. Run the development server: <br>
     • npm run dev <br>
 
-## 💻 Tech Stack 
+## 💻 Tech Stack  
 [![My Skills](https://skillicons.dev/icons?i=vue,typescript,vite,tailwindcss)](https://skillicons.dev)
 
 ## 🌐 Live Demo
