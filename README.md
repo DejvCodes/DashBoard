@@ -19,7 +19,7 @@ Built with modern web technologies for optimal performance.
 1. Clone the repository: <br>
     • git clone https://github.com/DejvCodes/DashBoard.git <br>
     • cd dashboard <br>
-2. Install dependencies: <br>
+2. Install dependencies: <br> 
     • npm install <br>
 3. Run the development server: <br>
     • npm run dev <br>
