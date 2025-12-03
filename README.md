@@ -22,7 +22,7 @@ Built with modern web technologies for optimal performance.
 2. Install dependencies: <br> 
     • npm install <br>
 3. Run the development server: <br>
-    • npm run dev <br>
+    • npm run dev <br> 
 
 ## 💻 Tech Stack  
 [![My Skills](https://skillicons.dev/icons?i=vue,typescript,vite,tailwindcss)](https://skillicons.dev)
